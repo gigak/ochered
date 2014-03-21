@@ -1,0 +1,116 @@
+\hypertarget{class_list}{\section{РљР»Р°СЃСЃ List}
+\label{class_list}\index{List@{List}}
+}
+
+
+Класс списка  
+
+
+\subsection*{РћС‚РєСЂС‹С‚С‹Рµ С‡Р»РµРЅС‹}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}{List} ()
+\item 
+\hyperlink{class_list_a70aecf37bd9d779a394e4d50377fbf5f}{$\sim$\-List} ()
+\begin{DoxyCompactList}\small\item\em Инициализация указателей как пустых \end{DoxyCompactList}\item 
+void \hyperlink{class_list_a9e7b0dc318bcfe67ee73a84c60150036}{Add} (int x)
+\begin{DoxyCompactList}\small\item\em Функция заполнения структуры \hyperlink{struct_node}{Node} и добавления её в список как элемента \end{DoxyCompactList}\item 
+void \hyperlink{class_list_a6a60372361046c0731aafd9459ea6c58}{Show} ()
+\begin{DoxyCompactList}\small\item\em Функция отображения списка \hyperlink{class_list}{List}. \end{DoxyCompactList}\item 
+void \hyperlink{class_list_a821f5976af13874baf39b6e482f1686d}{del} ()
+\begin{DoxyCompactList}\small\item\em Функция изъятия элемента \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{РџРѕРґСЂРѕР±РЅРѕРµ РѕРїРёСЃР°РЅРёРµ}
+Класс списка 
+
+\subsection{РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ(С‹)}
+\hypertarget{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}{\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\subsubsection[{List}]{\setlength{\rightskip}{0pt plus 5cm}List\-::\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_list_a64d878a92d11f7c63c70cbe4e7dd4176}
+\hypertarget{class_list_a70aecf37bd9d779a394e4d50377fbf5f}{\index{List@{List}!$\sim$\-List@{$\sim$\-List}}
+\index{$\sim$\-List@{$\sim$\-List}!List@{List}}
+\subsubsection[{$\sim$\-List}]{\setlength{\rightskip}{0pt plus 5cm}List\-::$\sim$\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_list_a70aecf37bd9d779a394e4d50377fbf5f}
+
+
+Инициализация указателей как пустых 
+
+Деструктор для освобождения памяти от всего что будет $<$ Временный указатель на начало списка
+
+$<$ Пока в списке что-\/то есть
+
+$<$ Резерв адреса на следующий элемент списка
+
+$<$ Освобождение памяти от первой структуры как элемента списка
+
+$<$ Сдвиг начала на следующий адрес, который берем из резерва 
+
+\subsection{РњРµС‚РѕРґС‹}
+\hypertarget{class_list_a9e7b0dc318bcfe67ee73a84c60150036}{\index{List@{List}!Add@{Add}}
+\index{Add@{Add}!List@{List}}
+\subsubsection[{Add}]{\setlength{\rightskip}{0pt plus 5cm}void List\-::\-Add (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}}\label{class_list_a9e7b0dc318bcfe67ee73a84c60150036}
+
+
+Функция заполнения структуры \hyperlink{struct_node}{Node} и добавления её в список как элемента 
+
+ФУНКЦИЯ ЗАПОЛНЕНИЯ ИНФОРМАЦИОННЫХ ПОЛЕЙ СТРУКТУРЫ N\-O\-D\-E И ДОБАВЛЕНИЯ ЭТОЙ СТРУКТУРЫ В СПИСОК $<$ Выделение памяти для нового звена списка
+
+$<$ Временное запоминание принятого параметра x
+
+$<$ Указание, что следующее звено новосозданной структуры пока пустое
+
+$<$ Если список не пуст
+
+$<$ Указание, что следующее звено списка это новосозданная структура
+
+$<$ Если список не пуст, добавление первого элемента \hypertarget{class_list_a821f5976af13874baf39b6e482f1686d}{\index{List@{List}!del@{del}}
+\index{del@{del}!List@{List}}
+\subsubsection[{del}]{\setlength{\rightskip}{0pt plus 5cm}void List\-::del (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_list_a821f5976af13874baf39b6e482f1686d}
+
+
+Функция изъятия элемента 
+
+ФУНКЦИЯ ИЗЪЯТИЯ ЭЛЕМЕНТА ИЗ ОЧЕРЕДИ $<$ Если список не пустой
+
+$<$ Обращаемся к началу списка с помощью вспомогательного указателя
+
+$<$ Сдвиг начала списка
+
+$<$ Освобождение памяти от предыдущего звена списка \hypertarget{class_list_a6a60372361046c0731aafd9459ea6c58}{\index{List@{List}!Show@{Show}}
+\index{Show@{Show}!List@{List}}
+\subsubsection[{Show}]{\setlength{\rightskip}{0pt plus 5cm}void List\-::\-Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_list_a6a60372361046c0731aafd9459ea6c58}
+
+
+Функция отображения списка \hyperlink{class_list}{List}. 
+
+ФУНКЦИЯ ОТОБРАЖЕНИЯ СПИСКА НА ЭКРАНЕ $<$ Временный указатель на начало списка
+
+$<$ Пока в списке что-\/то встречается
+
+$<$ Выводим значения из списка на экран
+
+$<$ Сдвигаем указатель на начало на адрес следующего элемента 
+
+РћР±СЉСЏРІР»РµРЅРёСЏ Рё РѕРїРёСЃР°РЅРёСЏ С‡Р»РµРЅРѕРІ РєР»Р°СЃСЃР° РЅР°С…РѕРґСЏС‚СЃСЏ РІ С„Р°Р№Р»Рµ\-:\begin{DoxyCompactItemize}
+\item 
+ochered/\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}
